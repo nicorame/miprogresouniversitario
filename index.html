@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Seguimiento de Carrera – Correlatividades</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <header class="topbar">
+    <h1>Mi Progreso Universitario</h1>
+    <div class="controls">
+      <label class="control">
+        Modo:
+        <select id="modeSelect">
+          <option value="both">Ambos (Cursar y Rendir)</option>
+          <option value="cursar">Cursar</option>
+          <option value="rendir">Rendir</option>
+        </select>
+      </label>
+      <button id="exportBtn" class="btn">Exportar JSON</button>
+      <label class="btn file">
+        Importar JSON
+        <input id="importInput" type="file" accept="application/json" />
+      </label>
+      <button id="resetBtn" class="btn btn-outline">Reiniciar estados</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="legend" class="legend">
+      <span class="hint">Para usar: clic en una materia para cambiar: Sin cursar → Regular → Aprobada.</span>
+    </section>
+
+    <section id="graphWrapper">
+      <svg id="edgesSvg"></svg>
+      <div id="yearsContainer"></div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <small>Proyecto Final se habilita cuando TODAS las demás materias están aprobadas.</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
