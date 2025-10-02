@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Seguimiento de Carrera – Correlatividades</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mi progreso universitario</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="shortcut icon" href="icons8-university-96.png" type="image/x-icon">
+  
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-74BNFD5SZ1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-74BNFD5SZ1");
+  </script>
 </head>
+
 <body>
-   <header class="topbar">
+  <header class="topbar">
     <h1>Mi Progreso Universitario</h1>
     <div class="controls">
       <label class="control">
@@ -29,7 +45,8 @@
 
   <main>
     <section id="legend" class="legend">
-      <span class="hint">Para usar: clic en una materia para cambiar: Sin cursar → Regular → Aprobada.</span>
+      <span class="hint">Para usar: clic en una materia para cambiar: Sin cursar → Regular →
+        Aprobada.</span>
     </section>
 
     <section id="graphWrapper">
@@ -39,9 +56,11 @@
   </main>
 
   <footer class="foot">
-    <small>Proyecto Final se habilita cuando TODAS las demás materias están aprobadas.</small>
+    <small>Proyecto Final se habilita cuando TODAS las demás materias están
+      aprobadas.</small>
   </footer>
 
   <script src="app.js"></script>
 </body>
+
 </html>
